@@ -1,0 +1,30 @@
+void main() {
+  var store = [2,3,10,2,1,50,5,7,9];
+
+  var result;
+
+
+  for (int i = 0; i < store.length; i++) {
+
+    for (int k = i + 1; k < store.length; k++) {
+      if (store[i] > store[k]) {
+
+
+        result = store[i];
+        store[i]=store[k];
+        store[k]=result;
+        
+        
+      }
+       
+      } 
+      
+     
+    
+  }
+
+  print("arry in asendending order: $store");
+  
+  print("Smallist number is : ${store[0]}");
+  print("Largest number is : ${store[store.length-1]}");
+}
