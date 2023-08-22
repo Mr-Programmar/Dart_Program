@@ -1,0 +1,35 @@
+
+void main(){
+ 
+  B obj=B();
+  obj.meCalledAbstractMethod();
+  obj.display();  
+}
+
+
+
+
+
+abstract class A {
+  
+  void meCalledAbstractMethod();
+  
+  void display(){
+    
+  }
+} 
+
+
+
+
+
+
+ class B extends A{
+  @override
+  void meCalledAbstractMethod(){
+   
+     print("I am Called Abstract method ");
+  }
+  
+}
+
